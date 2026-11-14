@@ -1,0 +1,11 @@
+Place,City,Category,Cost,Rating,Distance
+Charminar,Hyderabad,History,50,4.5,2
+Golconda Fort,Hyderabad,History,100,4.6,8
+Salar Jung Museum,Hyderabad,History,50,4.4,3
+Hussain Sagar,Hyderabad,Nature,0,4.3,5
+Birla Mandir,Hyderabad,Religious,0,4.5,4
+Nehru Zoological Park,Hyderabad,Nature,50,4.2,10
+Ramoji Film City,Hyderabad,Entertainment,1500,4.5,30
+Shilparamam,Hyderabad,Culture,50,4.3,15
+Tank Bund,Hyderabad,Nature,0,4.2,5
+Chowmahalla Palace,Hyderabad,History,100,4.6,2
