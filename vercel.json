@@ -1,0 +1,39 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "ai_recommendation": {
+      "root": "Travelmates-project-main/AI_recommendation",
+      "runtime": "python"
+    },
+    "backend": {
+      "root": "Travelmates-project-main/backend",
+      "framework": "express",
+      "bindings": [
+        {
+          "type": "service",
+          "service": "ai_recommendation",
+          "format": "url",
+          "env": "AI_RECOMMENDATION_URL"
+        }
+      ]
+    },
+    "frontend": {
+      "root": "Travelmates-project-main/frontend",
+      "framework": "vite"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "backend"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "frontend"
+      }
+    }
+  ]
+}
